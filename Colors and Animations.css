@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*headings*/
+body
+{
+	background-color: black;
+}
+.gradientitle
+{
+	background: linear-gradient(to right, #FF1493 0%, #23b1eb 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h1
+{
+    font-size: 50px;
+    /*color: ;*/
+    text-align: center;
+	font-family: 'Lemon/Milk', 'Lemon/Milk light';
+	letter-spacing: 3px;
+	font-weight: 600;
+	line-height: 45px;
+    margin-bottom: 50px;
+}
+h2
+{
+    font-size: 40px;
+    color: #FF1493;
+    text-align: center;
+    font-family: Segoe, "Segoe UI";
+    letter-spacing: 2px;
+    font-weight: 100;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+h4
+{
+    font-size: 20px;
+    color: #FF1493;
+    text-align: center;
+    font-family: Segoe, "Segoe UI";
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 10px;
+    margin-bottom: 20px;
+}
+h5
+{
+    font-size: 30px;
+    color: #FF1493;
+    text-align: center;
+    font-family: Segoe, "Segoe UI";
+    letter-spacing: 2px;
+    font-weight: 100;
+    line-height: 1px;
+    margin-top: 350px;
+}
+/*Parent Divs(?)*/
+.NewSection
+{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.AlbumArtSection
+{
+	position: relative;
+    display: flex;
+    flex: 0 0 400px;
+    justify-content: center;
+    align-items: center;
+    top: 160px;
+}
+.AlbumArtRing
+{
+    position: absolute;
+	content: url("Pictures, Icons and Assets/color ring for album art.png");
+    width: 325px;
+	height:325px;
+    z-index: -1;
+}
+.AlbumArtItself
+{
+    position: absolute;
+	content: url("Pictures, Icons and Assets/1200x630bb.jpg");
+	z-index: -2;
+    width: 325px;
+	height:325px;
+    border-radius: 900px;
+}
+.VolumeContainer
+{
+    position: relative;
+    display: flex;
+    flex: 0 0 400px;
+    justify-content: center;
+    align-items: center;
+}
+/*buttons*/
+.previous
+{
+    position: absolute;
+	background: none;
+	border: none;
+    z-index: 1;
+    left: -100px;
+}
+
+#playpause
+{
+    
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.next
+{
+    position: absolute;
+	background: none;
+	border: 0;
+    z-index: 1;
+    right: -100px;
+}
+
+.info
+{
+    background: none;
+    border: none;
+}
+
+/*mouse hovers and stuff*/
+div.prev_button
+{
+	content: url("Pictures, Icons and Assets/reverse.png");
+	width: 100px;
+	height: 100px;
+}
+div.prev_button:hover
+{
+	content: url("Pictures, Icons and Assets/reverse hover.png");
+	width: 100px;
+	height: 100px;
+}
+div.prev_button:active
+{
+	content: url("Pictures, Icons and Assets/reverse clicked.png");
+	width: 100px;
+	height: 100px;
+}
+
+/*Real Shit*/
+
+
+.play
+{
+    background: url("Pictures, Icons and Assets/play button.png");
+    position: absolute;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    opacity: 0.2;
+    animation-name: FadeNSize;
+    animation-duration: 0.3s;
+}
+.play:hover
+{
+	background: url("Pictures, Icons and Assets/play button hovering.png");
+    background-size: contain;
+	width: 150px;
+	height: 150px;
+    opacity: 0.6;
+}
+#play:active
+{
+    background: url("Pictures, Icons and Assets/play button clicked.png");
+    background-size: contain;
+	width: 150px;
+	height: 150px;
+    opacity: 1;
+}
+.pause
+{
+    background: url("Pictures, Icons and Assets/pause.png");
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    opacity: 0.2;
+    animation-name: FadeNSize;
+    animation-duration: 0.3s;
+    
+}
+.pause:hover
+{
+    background: url("Pictures, Icons and Assets/pause hover.png");
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    opacity: 0.8;
+    
+}
+.pause:active
+{
+    background: url("Pictures, Icons and Assets/pause clicked.png");
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    
+}
+
+/*End of the real stuff*/
+
+div.next_button
+{
+	content: url("Pictures, Icons and Assets/next.png");
+	width: 100px;
+	height: 100px;
+}
+div.next_button:hover
+{
+	content: url("Pictures, Icons and Assets/next hover.png");
+	width: 100px;
+	height: 100px;
+}
+div.next_button:active
+{
+	content: url("Pictures, Icons and Assets/next clicked.png");
+	width: 100px;
+	height: 100px;
+}
+div.info_button
+{
+    content: url("Pictures, Icons and Assets/info button.png");
+    width: 30px;
+    height: 30px;
+}
+div.info_button:hover
+{
+    content: url("Pictures, Icons and Assets/info button hovering.png");
+    width: 30px;
+    height: 30px;
+}
+div.info_button:active
+{
+    content: url("Pictures, Icons and Assets/info button clicked.png");
+    width: 30px;
+    height: 30px;
+}
+/*slider*/
+.slider {
+  -webkit-appearance: none;
+  width: 300px;
+  height: 10px;
+  border-radius: 5px;  
+  background: linear-gradient(to left, #FF1493 0%, #23b1eb 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: #FF1493;
+  border-radius: 50%; 
+  background: linear-gradient(45deg, #FF1493 0%, #23b1eb 100%);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border: #FF1493;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #FF1493 0%, #23b1eb 100%);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*gradient volume slider from codepen*/
+
+
+
+@keyframes FadeNSize
+{
+    0%
+    {
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+.CoolFadeSizeHuge
+{
+    animation-name: FadeNSize;
+    animation-duration: 0.5s;
+    
+}
+
+
+@keyframes Fade
+{
+    0%
+    {
+       opacity: 0; 
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.fade
+{
+    animation-name: Fade;
+    animation-duration: 2s;
+}
