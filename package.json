@@ -1,0 +1,19 @@
+{
+  "name": "databaseproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveedt64/DatabaseProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveedt64/DatabaseProject/issues"
+  },
+  "homepage": "https://github.com/naveedt64/DatabaseProject#readme"
+}
